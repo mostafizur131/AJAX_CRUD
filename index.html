@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX CRUD</title>
+    <link rel="stylesheet" href="./CSS/milligram.css">
+</head>
+<body>
+    <div id="loader" class="loading d-none">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <a href="create.html" class="button button-outline float-right">Create New</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Code</th>
+                        <th>Unit Price</th>
+                        <th>Qty</th>
+                        <th>Total Price</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                        
+                    </tr>
+                </thead>
+                <tbody id="itemList"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./JS/axios.min.js"></script>
+    <script src="./JS/main.js"></script>
+    
+</body>
+</html>
